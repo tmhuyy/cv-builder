@@ -23,9 +23,9 @@ const endDate = document.querySelectorAll("#start_end_date_school")[1];
 // Skill
 const descriptionSkill = document.querySelector("#description_skill");
 // Link
-const link = document.querySelector("#link");
-const label = document.querySelector("#label");
-
+// const link = document.querySelector("#link");
+// const label = document.querySelector("#label");
+// IDEA dynamic form => dont check validation
 buttonField1.addEventListener("click", (e) => {
     e.preventDefault();
     checkValidator1();
@@ -46,10 +46,10 @@ buttonField4.addEventListener("click", (e) => {
     checkValidator4();
 });
 // BUG
-buttonField6.addEventListener("click", (e) => {
-    e.preventDefault();
-    checkValidator6();
-});
+// buttonField6.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     checkValidator6();
+// });
 
 const blank = "Cannot be blank";
 
@@ -87,13 +87,6 @@ const checkValidator3 = function () {
 const checkValidator4 = function () {
     const descriptionSkillValue = trimValue(descriptionSkill);
     checkEmpty(descriptionSkillValue, descriptionSkill, blank);
-};
-
-const checkValidator6 = function () {
-    const linkValue = trimValue(link);
-    const labelValue = trimValue(label);
-    checkEmpty(labelValue, label, blank);
-    checkURL(linkValue, link, blank, "Invalid URL");
 };
 
 const checkEmpty = (value, inputValue, message) =>
