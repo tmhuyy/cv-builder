@@ -2,7 +2,11 @@ const addField = document.querySelector("#add3");
 const removeField = document.querySelector("#remove");
 let count = 0;
 removeField.addEventListener("click", function () {
-    console.log("remove");
+    const accordion = document.querySelectorAll("#accordion");
+    if (accordion.length > 1) {
+        count--;
+        accordion[accordion.length - 1].remove();
+    }
 });
 
 // remove_fields.onclick = function () {
