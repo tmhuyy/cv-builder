@@ -1,11 +1,11 @@
-const addField = document.querySelector("#add3");
-const removeField = document.querySelector("#remove");
+const addField3 = document.querySelector("#add3");
+const removeField3 = document.querySelector("#remove3");
 let count = 0;
-removeField.addEventListener("click", function () {
-    const accordion = document.querySelectorAll("#accordion");
-    if (accordion.length > 1) {
+removeField3.addEventListener("click", function () {
+    const accordion3 = document.querySelectorAll("#accordion3");
+    if (accordion3.length > 1) {
         count--;
-        accordion[accordion.length - 1].remove();
+        accordion3[accordion3.length - 1].remove();
     }
 });
 
@@ -15,7 +15,8 @@ removeField.addEventListener("click", function () {
 //         survey_options.removeChild(input_tags[input_tags.length - 1]);
 //     }
 
-addField.addEventListener("click", function () {
+addField3.addEventListener("click", function () {
+    console.log("easj");
     const label = document.querySelectorAll("#label");
     const link = document.querySelectorAll("#link");
 
@@ -24,8 +25,9 @@ addField.addEventListener("click", function () {
         link[i].setAttribute("value", link[i].value);
     }
     count++;
+    console.log(count);
     const title =
-        '<div id="accordion">\
+        '<div id="accordion3">\
     <button type="button" class="accordion" onclick="change()">\
         Section' +
         count +
@@ -64,13 +66,13 @@ addField.addEventListener("click", function () {
         </div>\
     </div>\
 </div>';
-    const moreForm = document.querySelector("#more-form");
-    moreForm.innerHTML += title;
-    const closeForm = document.getElementsByClassName("accordion");
+    const moreForm3 = document.querySelector("#more-form3");
+    moreForm3.innerHTML += title;
+    const closeForm3 = document.getElementsByClassName("accordion");
 
-    for (let i = 0; i < closeForm.length; i++) {
-        closeForm[i].classList.remove("change");
-        let panel = closeForm[i].nextElementSibling;
+    for (let i = 0; i < closeForm3.length; i++) {
+        closeForm3[i].classList.remove("change");
+        let panel = closeForm3[i].nextElementSibling;
         panel.style.maxHeight = null;
     }
 });
