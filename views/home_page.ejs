@@ -285,16 +285,17 @@
         <fieldset class="card" data-step>
             <h3 class="step-title">Websites & Social Links</h3>
             <div id="more-form">
-                <div id="accordion1">
-                    <button type="button" class="accordion">Section 1</button>
+                <div id="accordion">
+                    <button type="button" class="accordion" onclick="change()">
+                        Section 0
+                    </button>
                     <div class="panel">
                         <div class="form-group">
                             <label for="label">Label</label>
                             <input
                                 type="text"
-                                name="link_label1"
+                                name="link_label0"
                                 id="label"
-                                placeholder=""
                                 required
                             />
                             <i class="fas fa-check-circle"></i>
@@ -305,7 +306,7 @@
                             <label for="link">Link</label>
                             <input
                                 type="url"
-                                name="link1"
+                                name="link0"
                                 id="link"
                                 pattern="https://.*"
                                 size="30"
@@ -319,7 +320,7 @@
                 </div>
             </div>
             <div class="controls">
-                <button type="button" id="add">
+                <button type="button" id="add3">
                     <i class="fa fa-plus"></i> Add More
                 </button>
                 <button type="button" id="remove">
