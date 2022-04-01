@@ -1,8 +1,16 @@
 "use strict";
-flatpickr("#start_end_date_school", {
+flatpickr("#start_date_school", {
     dateFormat: "M, Y",
 });
 
-flatpickr("#start_end_date_project", {
+flatpickr("#start_date_school", {
+    dateFormat: "M, Y",
+});
+
+flatpickr("#end_date_school", {
+    dateFormat: "M, Y",
+});
+
+flatpickr("#end_date_school", {
     dateFormat: "M, Y",
 });
