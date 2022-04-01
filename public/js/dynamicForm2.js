@@ -12,6 +12,7 @@ removeField1.addEventListener("click", function () {
 addField1.addEventListener("click", function () {
     const schoolName = document.querySelectorAll("#school_name");
     const degree = document.querySelectorAll("#degree");
+    // BUG textarea not have attribute value
     const descriptionSchool = document.querySelectorAll("#description_school");
     const startDate = document.querySelectorAll("#start_date_school");
     const endDate = document.querySelectorAll("#end_date_school");
@@ -25,71 +26,72 @@ addField1.addEventListener("click", function () {
     counter++;
     const title =
         '<div id="accordion1">\
-    <button type="button" class="accordion" onclick="change()">Section' +
+        <button type="button" class="accordion" onclick="change()">\
+            Section ' +
         counter +
-        '</button>\
-    <div class="panel">\
-        <div class="form-group">\
-            <label for="school_name">School</label>\
-            <input\
-                type="text"\
-                name="school_name"\
-                id="school_name"\
-                placeholder=""\
-                required\
-            />\
-            <i class="fas fa-check-circle"></i>\
-            <i class="fas fa-exclamation-circle"></i>\
-            <small>Error message</small>\
-        </div>\
-        <div class="form-group">\
-            <label for="degree">Degree</label>\
-            <input\
-                type="text"\
-                name="degree"\
-                id="degree"\
-                placeholder=""\
-                required\
-            />\
-            <i class="fas fa-check-circle"></i>\
-            <i class="fas fa-exclamation-circle"></i>\
-            <small>Error message</small>\
-        </div>\
-        <div class="form-group">\
-            <label for="description_school">Description</label>\
-            <textarea\
-                id="description_school"\
-                name="description_school"\
-                placeholder="e.g Graduated with High Honors"\
-            ></textarea>\
-            <i class="fas fa-check-circle"></i>\
-            <i class="fas fa-exclamation-circle"></i>\
-            <small>Error message</small>\
-        </div>\
-        <div class="form-group">\
-            <label\
-                >Start & End Date*</label\
-            >\
-            <div class="date">\
+        '\
+        </button>\
+        <div class="panel">\
+            <div class="form-group">\
+                <label for="school_name">School</label>\
                 <input\
                     type="text"\
-                    name="start_school"\
-                    id="start_date_school"\
-                    placeholder="YYYY-MM"\
+                    name="school_name"\
+                    id="school_name"\
+                    placeholder=""\
                     required\
                 />\
-                <input\
-                    type="text"\
-                    name="end_school"\
-                    id="end_date_school"\
-                    placeholder="YYYY-MM"\
-                    required\
-                />\
+                <i class="fas fa-check-circle"></i>\
+                <i class="fas fa-exclamation-circle"></i>\
                 <small>Error message</small>\
             </div>\
+            <div class="form-group">\
+                <label for="degree">Degree</label>\
+                <input\
+                    type="text"\
+                    name="degree"\
+                    id="degree"\
+                    placeholder=""\
+                    required\
+                />\
+                <i class="fas fa-check-circle"></i>\
+                <i class="fas fa-exclamation-circle"></i>\
+                <small>Error message</small>\
+            </div>\
+            <div class="form-group">\
+                <label for="description_school">Description</label>\
+                <input\
+                    type="text"\
+                    id="description_school"\
+                    name="description_school"\
+                    placeholder="e.g Graduated with High Honors"\
+                />\
+                <i class="fas fa-check-circle"></i>\
+                <i class="fas fa-exclamation-circle"></i>\
+                <small>Error message</small>\
+            </div>\
+            <div class="form-group">\
+                <label>Start & End Date*</label>\
+                <div class="date">\
+                    <input\
+                        type="text"\
+                        name="start_school"\
+                        id="start_date_school"\
+                        placeholder="YYYY-MM"\
+                        required\
+                    />\
+                    <input\
+                        type="text"\
+                        name="end_school"\
+                        id="end_date_school"\
+                        placeholder="YYYY-MM"\
+                        required\
+                    />\
+                    <small>Error message</small>\
+                </div>\
+            </div>\
         </div>\
-    </div>\
-</div>';
+    </div>';
     const moreForm1 = document.querySelector("#more-form1");
     moreForm1.innerHTML += title;
     // const accordion1 = document.querySelectorAll("#accordion1");
