@@ -46,7 +46,7 @@
             <div class="progress-step" data-title="Link"></div>
         </div>
         <!-- form input -->
-        <fieldset class="card" data-step>
+        <!-- <fieldset class="card" data-step>
             <h3 class="step-title">Personal Details</h3>
             <div class="form-group">
                 <label for="first_name">First Name</label>
@@ -281,38 +281,40 @@
             <button id="next-5" type="button" data-next class="action-button">
                 Next
             </button>
-        </fieldset>
+        </fieldset> -->
         <fieldset class="card" data-step>
             <h3 class="step-title">Websites & Social Links</h3>
             <div id="more-form">
-                <button type="button" class="accordion">Section 1</button>
-                <div class="panel">
-                    <div class="form-group">
-                        <label for="label">Label</label>
-                        <input
-                            type="text"
-                            name="link_label"
-                            id="label"
-                            placeholder=""
-                            required
-                        />
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="link">Link</label>
-                        <input
-                            type="url"
-                            name="link"
-                            id="link"
-                            pattern="https://.*"
-                            size="30"
-                            required
-                        />
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
+                <div id="accordion1">
+                    <button type="button" class="accordion">Section 1</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input
+                                type="text"
+                                name="link_label1"
+                                id="label"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="link">Link</label>
+                            <input
+                                type="url"
+                                name="link1"
+                                id="link"
+                                pattern="https://.*"
+                                size="30"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -324,12 +326,14 @@
                     <i class="fa fa-plus"></i> Remove Field
                 </button>
             </div>
-            <button type="button" data-previous class="action-button">
-                Previous
-            </button>
-            <button id="next-6" type="submit" class="action-button">
-                Submit
-            </button>
+            <div>
+                <button type="button" data-previous class="action-button">
+                    Previous
+                </button>
+                <button id="next-6" type="submit" class="action-button">
+                    Submit
+                </button>
+            </div>
         </fieldset>
     </form>
     <!-- social contact -->

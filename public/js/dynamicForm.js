@@ -1,9 +1,13 @@
 const fieldSet = document.querySelector(".card");
 const addField = document.querySelector("#add");
 const removeField = document.querySelector("#remove");
-
+const p = document.createElement("p");
+let count = 0;
 addField.addEventListener("click", () => {
-    console.log("add");
+    count++;
+    p.textContent = "hello";
+    const moreForm = document.querySelector("#more-form");
+    moreForm.appendChild(p);
 });
 removeField.addEventListener("click", () => {
     console.log("remove");
