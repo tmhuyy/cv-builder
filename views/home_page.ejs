@@ -46,7 +46,7 @@
             <div class="progress-step" data-title="Link"></div>
         </div>
         <!-- form input -->
-        <fieldset class="card" data-step>
+        <!-- <fieldset class="card" data-step>
             <h3 class="step-title">Personal Details</h3>
             <div class="form-group">
                 <label for="first_name">First Name</label>
@@ -133,12 +133,14 @@
             <button id="next-2" type="button" data-next class="action-button">
                 Next
             </button>
-        </fieldset>
+        </fieldset> -->
         <fieldset class="card" data-step>
             <h3 class="step-title">Education</h3>
-            <div id="more-form">
-                <div id="accordion">
-                    <button type="button" class="accordion">Section 1</button>
+            <div id="more-form1">
+                <div id="accordion1">
+                    <button type="button" class="accordion" onclick="change()">
+                        Section 0
+                    </button>
                     <div class="panel">
                         <div class="form-group">
                             <label for="school_name">School</label>
@@ -178,21 +180,19 @@
                             <small>Error message</small>
                         </div>
                         <div class="form-group">
-                            <label for="start_end_date_school"
-                                >Start & End Date*</label
-                            >
+                            <label>Start & End Date*</label>
                             <div class="date">
                                 <input
                                     type="text"
                                     name="start_school"
-                                    id="start_end_date_school"
+                                    id="start_date_school"
                                     placeholder="YYYY-MM"
                                     required
                                 />
                                 <input
                                     type="text"
                                     name="end_school"
-                                    id="start_end_date_school"
+                                    id="end_date_school"
                                     placeholder="YYYY-MM"
                                     required
                                 />
@@ -206,7 +206,7 @@
                 <button type="button" id="add1">
                     <i class="fa fa-plus"></i> Add More
                 </button>
-                <button type="button" id="remove">
+                <button type="button" id="remove1">
                     <i class="fa fa-plus"></i> Remove Field
                 </button>
             </div>
@@ -224,7 +224,7 @@
                 </button>
             </div>
         </fieldset>
-        <fieldset class="card" data-step>
+        <!-- <fieldset class="card" data-step>
             <h3 class="step-title">Skills</h3>
             <div class="form-group">
                 <label for="description_skill">Description</label>
@@ -302,11 +302,11 @@
             <button id="next-5" type="button" data-next class="action-button">
                 Next
             </button>
-        </fieldset>
+        </fieldset> -->
         <fieldset class="card" data-step>
             <h3 class="step-title">Websites & Social Links</h3>
-            <div id="more-form">
-                <div id="accordion">
+            <div id="more-form3">
+                <div id="accordion3">
                     <button type="button" class="accordion" onclick="change()">
                         Section 0
                     </button>
@@ -344,7 +344,7 @@
                 <button type="button" id="add3">
                     <i class="fa fa-plus"></i> Add More
                 </button>
-                <button type="button" id="remove">
+                <button type="button" id="remove3">
                     <i class="fa fa-plus"></i> Remove Field
                 </button>
             </div>
@@ -387,3 +387,4 @@
 <script src="/js/contact.js"></script>
 <script src="/js/dynamicForm.js"></script>
 <script src="/js/accordion.js"></script>
+<script src="/js/dynamicForm2.js"></script>
