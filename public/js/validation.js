@@ -45,11 +45,11 @@ buttonField4.addEventListener("click", (e) => {
     e.preventDefault();
     checkValidator4();
 });
-
-buttonField6.addEventListener("click", (e) => {
-    e.preventDefault();
-    checkValidator6();
-});
+// BUG
+// buttonField6.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     checkValidator6();
+// });
 
 const blank = "Cannot be blank";
 
