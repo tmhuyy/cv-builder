@@ -1,0 +1,363 @@
+<!-- flatpickr package -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+/>
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+/>
+
+<!-- style -->
+<link rel="icon" href="/img/favicon.ico" />
+<link rel="stylesheet" href="/css/home_page.css" />
+<link rel="stylesheet" href="/css/contact.css" />
+<link rel="stylesheet" href="/css/accordion.css" />
+<link rel="stylesheet" href="/css/dynamicForm.css" />
+<head>
+    <h1>Cv Builder</h1>
+</head>
+<body>
+    <form
+        data-multi-step
+        class="multi-step-form"
+        method="POST"
+        action="/register"
+    >
+        <h2>Progess</h2>
+        <!-- progress bar-->
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div
+                class="progress-step progress-step-active"
+                data-title="Intro"
+            ></div>
+            <div class="progress-step" data-title="Profile"></div>
+            <div class="progress-step" data-title="Education"></div>
+            <div class="progress-step" data-title="Skill"></div>
+            <div class="progress-step" data-title="Project"></div>
+            <div class="progress-step" data-title="Link"></div>
+        </div>
+        <!-- form input -->
+        <fieldset class="card" data-step>
+            <h3 class="step-title">Personal Details</h3>
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    placeholder=""
+                    required
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    placeholder=""
+                    required
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder=""
+                    required
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder=""
+                    required
+                />
+                <small>Error message</small>
+            </div>
+            <div class="form-group">
+                <label for="phone_number">Phone Number</label>
+                <input
+                    type="tel"
+                    name="phone_number"
+                    id="phone_number"
+                    placeholder=""
+                    minlength="10"
+                    maxlength="15"
+                    required
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button id="next-1" type="button" data-next class="action-button">
+                Next
+            </button>
+        </fieldset>
+        <fieldset class="card" data-step>
+            <h3 class="step-title">Career Objective</h3>
+            <div class="form-group">
+                <textarea
+                    id="summary"
+                    name="summary"
+                    placeholder="e.g To work as Software Engineer... "
+                ></textarea>
+                <small>Error message</small>
+            </div>
+            <button type="button" data-previous class="action-button">
+                Previous
+            </button>
+            <button id="next-2" type="button" data-next class="action-button">
+                Next
+            </button>
+        </fieldset>
+        <fieldset class="card" data-step>
+            <h3 class="step-title">Education</h3>
+            <button type="button" class="accordion">Section 1</button>
+            <div class="panel">
+                <div class="form-group">
+                    <label for="school_name">School</label>
+                    <input
+                        type="text"
+                        name="school_name"
+                        id="school_name"
+                        placeholder=""
+                        required
+                    />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-group">
+                    <label for="degree">Degree</label>
+                    <input
+                        type="text"
+                        name="degree"
+                        id="degree"
+                        placeholder=""
+                        required
+                    />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-group">
+                    <label for="description_school">Description</label>
+                    <textarea
+                        id="description_school"
+                        name="description_school"
+                        placeholder="e.g Graduated with High Honors"
+                    ></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-group">
+                    <label for="start_end_date_school">Start & End Date*</label>
+                    <div class="date">
+                        <input
+                            type="text"
+                            name="start_school"
+                            id="start_end_date_school"
+                            placeholder="YYYY-MM"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="end_school"
+                            id="start_end_date_school"
+                            placeholder="YYYY-MM"
+                            required
+                        />
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
+            <button type="button" data-previous class="action-button">
+                Previous
+            </button>
+            <button id="next-3" type="button" data-next class="action-button">
+                Next
+            </button>
+        </fieldset>
+        <fieldset class="card" data-step>
+            <h3 class="step-title">Skills</h3>
+            <div class="form-group">
+                <label for="description_skill">Description</label>
+                <textarea
+                    id="description_skill"
+                    name="description_skill"
+                    placeholder="e.g soft skill, advanced skill"
+                ></textarea>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button type="button" data-previous class="action-button">
+                Previous
+            </button>
+            <button id="next-4" type="button" data-next class="action-button">
+                Next
+            </button>
+        </fieldset>
+        <fieldset class="card" data-step>
+            <h3 class="step-title">Projects</h3>
+            <button type="button" class="accordion">Section 1</button>
+            <div class="panel">
+                <div class="form-group">
+                    <label for="project_name">Project Title</label>
+                    <input
+                        type="text"
+                        name="project_name"
+                        id="project_name"
+                        placeholder=""
+                        required
+                    />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-group">
+                    <label for="start_end_date_project"
+                        >Start & End Date*</label
+                    >
+                    <div class="date">
+                        <input
+                            type="text"
+                            name="start_project"
+                            id="start_end_date_project"
+                            placeholder="YYYY-MM"
+                            required
+                        />
+
+                        <input
+                            type="text"
+                            name="end_project"
+                            id="start_end_date_project"
+                            placeholder="YYYY-MM"
+                            required
+                        />
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description_project">Description</label>
+                    <textarea
+                        id="description_project"
+                        name="description_project"
+                        placeholder="e.g"
+                    ></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+            </div>
+            <button type="button" data-previous class="action-button">
+                Previous
+            </button>
+            <button id="next-5" type="button" data-next class="action-button">
+                Next
+            </button>
+        </fieldset>
+        <fieldset class="card" data-step>
+            <h3 class="step-title">Websites & Social Links</h3>
+            <div id="more-form">
+                <button type="button" class="accordion">Section 1</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label for="label">Label</label>
+                        <input
+                            type="text"
+                            name="link_label"
+                            id="label"
+                            placeholder=""
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="link">Link</label>
+                        <input
+                            type="url"
+                            name="link"
+                            id="link"
+                            pattern="https://.*"
+                            size="30"
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button type="button" id="add">
+                    <i class="fa fa-plus"></i> Add More
+                </button>
+                <button type="button" id="remove">
+                    <i class="fa fa-plus"></i> Remove Field
+                </button>
+            </div>
+            <button type="button" data-previous class="action-button">
+                Previous
+            </button>
+            <button id="next-6" type="submit" class="action-button">
+                Submit
+            </button>
+        </fieldset>
+    </form>
+    <!-- social contact -->
+    <div class="social-panel-container">
+        <div class="social-panel">
+            <p>Created by GROUP 6</p>
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <h4>Get in touch on</h4>
+            <ul>
+                <li>
+                    <a
+                        href="https://github.com/tmhuyy/cv_builder"
+                        target="_blank"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn">Contact</button>
+</body>
+<script src="/js/script.js"></script>
+<script src="/js/datetime_local.js"></script>
+<script src="/js/validation.js"></script>
+<script src="/js/auto_resize.js"></script>
+<script src="/js/contact.js"></script>
+<script src="/js/dynamicForm.js"></script>
+<script src="/js/accordion.js"></script>
