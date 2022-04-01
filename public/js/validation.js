@@ -26,27 +26,27 @@ const descriptionSkill = document.querySelector("#description_skill");
 const link = document.querySelector("#link");
 const label = document.querySelector("#label");
 
-// buttonField1.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     checkValidator1();
-// });
+buttonField1.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkValidator1();
+});
 
-// buttonField2.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     checkValidator2();
-// });
+buttonField2.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkValidator2();
+});
 
-// buttonField3.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     checkValidator3();
-// });
+buttonField3.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkValidator3();
+});
 
-// buttonField4.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     checkValidator4();
-// });
+buttonField4.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkValidator4();
+});
 // BUG
-buttonField6.addEventListener("submit", (e) => {
+buttonField6.addEventListener("click", (e) => {
     e.preventDefault();
     checkValidator6();
 });
