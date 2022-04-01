@@ -11,10 +11,6 @@ removeField.addEventListener("click", function () {
 //         survey_options.removeChild(input_tags[input_tags.length - 1]);
 //     }
 
-// const label = accordion[count].querySelector("#label");
-// const link = accordion[count].querySelector("#link");
-// label.value = " label.value";
-
 addField.addEventListener("click", function () {
     const label = document.querySelectorAll("#label");
     const link = document.querySelectorAll("#link");
