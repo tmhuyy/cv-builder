@@ -170,11 +170,12 @@
                         </div>
                         <div class="form-group">
                             <label for="description_school">Description</label>
-                            <textarea
+                            <input
+                                type="text"
                                 id="description_school"
                                 name="description_school"
                                 placeholder="e.g Graduated with High Honors"
-                            ></textarea>
+                            />
                             <i class="fas fa-check-circle"></i>
                             <i class="fas fa-exclamation-circle"></i>
                             <small>Error message</small>
@@ -183,17 +184,15 @@
                             <label>Start & End Date*</label>
                             <div class="date">
                                 <input
-                                    type="text"
+                                    type="date"
                                     name="start_school"
                                     id="start_date_school"
-                                    placeholder="YYYY-MM"
                                     required
                                 />
                                 <input
-                                    type="text"
+                                    type="date"
                                     name="end_school"
                                     id="end_date_school"
-                                    placeholder="YYYY-MM"
                                     required
                                 />
                                 <small>Error message</small>
@@ -243,8 +242,8 @@
             <button id="next-4" type="button" data-next class="action-button">
                 Next
             </button>
-        </fieldset>
-        <fieldset class="card" data-step>
+        </fieldset> -->
+        <!-- <fieldset class="card" data-step>
             <h3 class="step-title">Projects</h3>
             <button type="button" class="accordion">Section 1</button>
             <div class="panel">
@@ -315,7 +314,7 @@
                             <label for="label">Label</label>
                             <input
                                 type="text"
-                                name="link_label0"
+                                name="link_label"
                                 id="label"
                                 required
                             />
@@ -327,7 +326,7 @@
                             <label for="link">Link</label>
                             <input
                                 type="url"
-                                name="link0"
+                                name="link"
                                 id="link"
                                 pattern="https://.*"
                                 size="30"

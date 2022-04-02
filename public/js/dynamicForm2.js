@@ -74,17 +74,15 @@ addField1.addEventListener("click", function () {
                 <label>Start & End Date*</label>\
                 <div class="date">\
                     <input\
-                        type="text"\
+                        type="date"\
                         name="start_school"\
                         id="start_date_school"\
-                        placeholder="YYYY-MM"\
                         required\
                     />\
                     <input\
-                        type="text"\
+                        type="date"\
                         name="end_school"\
                         id="end_date_school"\
-                        placeholder="YYYY-MM"\
                         required\
                     />\
                     <small>Error message</small>\

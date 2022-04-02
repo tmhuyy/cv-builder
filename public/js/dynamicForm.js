@@ -16,7 +16,6 @@ removeField3.addEventListener("click", function () {
 //     }
 
 addField3.addEventListener("click", function () {
-    console.log("easj");
     const label = document.querySelectorAll("#label");
     const link = document.querySelectorAll("#link");
 
@@ -25,7 +24,6 @@ addField3.addEventListener("click", function () {
         link[i].setAttribute("value", link[i].value);
     }
     count++;
-    console.log(count);
     const title =
         '<div id="accordion3">\
     <button type="button" class="accordion" onclick="change()">\
@@ -38,9 +36,7 @@ addField3.addEventListener("click", function () {
             <label for="label">Label</label>\
             <input\
                 type="text"\
-                name="link_label' +
-        count +
-        '"\
+                name="link_label"\
                 id="label"\
                 required\
             />\
@@ -52,9 +48,7 @@ addField3.addEventListener("click", function () {
             <label for="link">Link</label>\
             <input\
                 type="url"\
-                name="link' +
-        count +
-        '"\
+                name="link"\
                 id="link"\
                 pattern="https://.*"\
                 size="30"\
