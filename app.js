@@ -17,7 +17,14 @@ app.use(express.static(__dirname + "/public"));
 
 // TODO set up the path
 app.get("/", function (req, res) {
-    res.render("home_page");
+    const now = new Date();
+    const currentDate = `${now.getFullYear()}-${
+        now.getMonth() + 1 < 10 ? "0" : ""
+    }${now.getMonth() + 1}`;
+    const data = {
+        currentDate,
+    };
+    res.render("home_page", data);
 });
 app.post("/register", function (req, res) {
     const data = {
