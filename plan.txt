@@ -4,3 +4,4 @@
 <March, 31, 2022> https://www.w3schools.com/howto/howto_js_collapsible.asp 
 or https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_symbol
 the idea for next config
+<April, 04, 2022> create overlay window to ask user want to remove field
