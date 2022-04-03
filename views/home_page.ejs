@@ -123,7 +123,7 @@
                 Next
             </button>
         </fieldset> -->
-        <fieldset class="card" data-step>
+        <!-- <fieldset class="card" data-step>
             <h3 class="step-title">Education</h3>
             <div id="more-form1">
                 <div id="accordion1">
@@ -213,7 +213,7 @@
                     Next
                 </button>
             </div>
-        </fieldset>
+        </fieldset> -->
         <!-- <fieldset class="card" data-step>
             <h3 class="step-title">Skills</h3>
             <div class="form-group">
@@ -234,66 +234,85 @@
                 Next
             </button>
         </fieldset> -->
-        <!-- <fieldset class="card" data-step>
+        <fieldset class="card" data-step>
             <h3 class="step-title">Projects</h3>
-            <button type="button" class="accordion">Section 1</button>
-            <div class="panel">
-                <div class="form-group">
-                    <label for="project_name">Project Title</label>
-                    <input
-                        type="text"
-                        name="project_name"
-                        id="project_name"
-                        placeholder=""
-                        required
-                    />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
-                <div class="form-group">
-                    <label
-                        >Start & End Date*</label
-                    >
-                    <div class="date">
-                        <input
-                            type="date"
-                            name="start_project"
-                            id="start_date_project"
-                            value="<%= currentDate %>"
-                            required
-                        />
+            <div id="more-form2">
+                <div id="accordion2">
+                    <button type="button" class="accordion" onclick="change()">
+                        Section 1
+                    </button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="project_name">Project Title</label>
+                            <input
+                                type="text"
+                                name="project_name"
+                                id="project_name"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Start & End Date*</label>
+                            <div class="date">
+                                <input
+                                    type="month"
+                                    name="start_project"
+                                    id="start_date_project"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
 
-                        <input
-                            type="date"
-                            name="end_project"
-                            id="end_date_project"
-                            value="<%= currentDate %>"
-                            required
-                        />
-                        <small>Error message</small>
+                                <input
+                                    type="month"
+                                    name="end_project"
+                                    id="end_date_project"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description_project">Description</label>
+                            <input
+                                type="text"
+                                id="description_project"
+                                name="description_project"
+                                placeholder="e.g Graduated with High Honors"
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="description_project">Description</label>
-                    <input
-                        type="text"
-                        id="description_project"
-                        name="description_project"
-                        placeholder="e.g Graduated with High Honors"
-                    />
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                </div>
             </div>
-            <button type="button" data-previous class="action-button">
-                Previous
-            </button>
-            <button id="next-5" type="button" data-next class="action-button">
-                Next
-            </button>
-        </fieldset> -->
+            <div class="controls">
+                <button type="button" id="add2">
+                    <i class="fa fa-plus"></i> Add More
+                </button>
+                <button type="button" id="remove2">
+                    <i class="fa fa-plus"></i> Remove Field
+                </button>
+            </div>
+            <div>
+                <button type="button" data-previous class="action-button">
+                    Previous
+                </button>
+                <button
+                    id="next-5"
+                    type="button"
+                    data-next
+                    class="action-button"
+                >
+                    Next
+                </button>
+            </div>
+        </fieldset>
         <fieldset class="card" data-step>
             <h3 class="step-title">Websites & Social Links</h3>
             <div id="more-form3">
