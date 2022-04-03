@@ -173,15 +173,17 @@
                             <label>Start & End Date*</label>
                             <div class="date">
                                 <input
-                                    type="date"
+                                    type="month"
                                     name="start_school"
                                     id="start_date_school"
+                                    value="<%= currentDate %>"
                                     required
                                 />
                                 <input
-                                    type="date"
+                                    type="month"
                                     name="end_school"
                                     id="end_date_school"
+                                    value="<%= currentDate %>"
                                     required
                                 />
                                 <small>Error message</small>
@@ -258,7 +260,7 @@
                             type="date"
                             name="start_project"
                             id="start_date_project"
-                            placeholder="YYYY-MM"
+                            value="<%= currentDate %>"
                             required
                         />
 
@@ -266,7 +268,7 @@
                             type="date"
                             name="end_project"
                             id="end_date_project"
-                            placeholder="YYYY-MM"
+                            value="<%= currentDate %>"
                             required
                         />
                         <small>Error message</small>
