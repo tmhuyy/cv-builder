@@ -18,7 +18,7 @@ body {
 }
 
 .card {
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.4);
     background-color: white;
     border: 1px solid #333;
     border-radius: 0.5rem;
@@ -192,6 +192,7 @@ textarea:focus {
     justify-content: space-between;
     counter-reset: step;
     margin: 2rem 0 4rem;
+    margin-bottom: 40px;
 }
 
 .progressbar::before,

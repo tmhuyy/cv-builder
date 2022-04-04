@@ -14,7 +14,7 @@
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 16px 31px -17px rgba(152, 171, 213, 0.6);
-    border: 2px solid #847e78;
+    border: 2px solid #92a7ee;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,14 @@
 }
 
 .social-panel p {
-    background-color: #847e78;
+    background: rgb(120, 116, 157);
+    background: linear-gradient(
+        0deg,
+        rgba(120, 116, 157, 1) 0%,
+        rgba(127, 127, 205, 1) 11%,
+        rgba(146, 167, 238, 1) 40%,
+        rgba(175, 221, 238, 1) 81%
+    );
     border-radius: 0 0 10px 10px;
     color: white;
     font-weight: bold;
@@ -123,7 +130,14 @@
 }
 
 .floating-btn:hover {
-    background-color: #847e78;
+    background: rgb(48, 48, 78);
+    background: radial-gradient(
+        circle,
+        rgba(48, 48, 78, 1) 0%,
+        rgba(86, 86, 135, 1) 32%,
+        rgba(129, 146, 205, 1) 72%,
+        rgba(158, 166, 255, 1) 98%
+    );
     color: white;
 }
 
