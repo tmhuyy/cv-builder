@@ -127,9 +127,133 @@
             <h3 class="step-title">Education</h3>
             <div id="more-form1">
                 <div id="accordion1">
-                    <button type="button" class="accordion" onclick="change()">
-                        Section 0
-                    </button>
+                    <button type="button" class="accordion">Section 1</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="school_name">School</label>
+                            <input
+                                type="text"
+                                name="school_name"
+                                id="school_name"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <input
+                                type="text"
+                                name="degree"
+                                id="degree"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="description_school">Description</label>
+                            <input
+                                type="text"
+                                id="description_school"
+                                name="description_school"
+                                placeholder="e.g Graduated with High Honors"
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Start & End Date*</label>
+                            <div class="date">
+                                <input
+                                    type="month"
+                                    name="start_school"
+                                    id="start_date_school"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+                                <input
+                                    type="month"
+                                    name="end_school"
+                                    id="end_date_school"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion1">
+                    <button type="button" class="accordion">Section 2</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="school_name">School</label>
+                            <input
+                                type="text"
+                                name="school_name"
+                                id="school_name"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <input
+                                type="text"
+                                name="degree"
+                                id="degree"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="description_school">Description</label>
+                            <input
+                                type="text"
+                                id="description_school"
+                                name="description_school"
+                                placeholder="e.g Graduated with High Honors"
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Start & End Date*</label>
+                            <div class="date">
+                                <input
+                                    type="month"
+                                    name="start_school"
+                                    id="start_date_school"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+                                <input
+                                    type="month"
+                                    name="end_school"
+                                    id="end_date_school"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion1">
+                    <button type="button" class="accordion">Section 3</button>
                     <div class="panel">
                         <div class="form-group">
                             <label for="school_name">School</label>
@@ -238,9 +362,109 @@
             <h3 class="step-title">Projects</h3>
             <div id="more-form2">
                 <div id="accordion2">
-                    <button type="button" class="accordion" onclick="change()">
-                        Section 0
-                    </button>
+                    <button type="button" class="accordion">Section 1</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="project_name">Project Title</label>
+                            <input
+                                type="text"
+                                name="project_name"
+                                id="project_name"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Start & End Date*</label>
+                            <div class="date">
+                                <input
+                                    type="month"
+                                    name="start_project"
+                                    id="start_date_project"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+
+                                <input
+                                    type="month"
+                                    name="end_project"
+                                    id="end_date_project"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description_project">Description</label>
+                            <input
+                                type="text"
+                                id="description_project"
+                                name="description_project"
+                                placeholder="e.g Graduated with High Honors"
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion2">
+                    <button type="button" class="accordion">Section 2</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="project_name">Project Title</label>
+                            <input
+                                type="text"
+                                name="project_name"
+                                id="project_name"
+                                placeholder=""
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Start & End Date*</label>
+                            <div class="date">
+                                <input
+                                    type="month"
+                                    name="start_project"
+                                    id="start_date_project"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+
+                                <input
+                                    type="month"
+                                    name="end_project"
+                                    id="end_date_project"
+                                    value="<%= currentDate %>"
+                                    required
+                                />
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description_project">Description</label>
+                            <input
+                                type="text"
+                                id="description_project"
+                                name="description_project"
+                                placeholder="e.g Graduated with High Honors"
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion2">
+                    <button type="button" class="accordion">Section 3</button>
                     <div class="panel">
                         <div class="form-group">
                             <label for="project_name">Project Title</label>
@@ -291,6 +515,312 @@
                     </div>
                 </div>
             </div>
+            <div id="accordion2">
+                <button type="button" class="accordion">Section 4</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label for="project_name">Project Title</label>
+                        <input
+                            type="text"
+                            name="project_name"
+                            id="project_name"
+                            placeholder=""
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Start & End Date*</label>
+                        <div class="date">
+                            <input
+                                type="month"
+                                name="start_project"
+                                id="start_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+
+                            <input
+                                type="month"
+                                name="end_project"
+                                id="end_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description_project">Description</label>
+                        <input
+                            type="text"
+                            id="description_project"
+                            name="description_project"
+                            placeholder="e.g Graduated with High Honors"
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion2">
+                <button type="button" class="accordion">Section 5</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label for="project_name">Project Title</label>
+                        <input
+                            type="text"
+                            name="project_name"
+                            id="project_name"
+                            placeholder=""
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Start & End Date*</label>
+                        <div class="date">
+                            <input
+                                type="month"
+                                name="start_project"
+                                id="start_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+
+                            <input
+                                type="month"
+                                name="end_project"
+                                id="end_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description_project">Description</label>
+                        <input
+                            type="text"
+                            id="description_project"
+                            name="description_project"
+                            placeholder="e.g Graduated with High Honors"
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion2">
+                <button type="button" class="accordion">Section 6</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label for="project_name">Project Title</label>
+                        <input
+                            type="text"
+                            name="project_name"
+                            id="project_name"
+                            placeholder=""
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Start & End Date*</label>
+                        <div class="date">
+                            <input
+                                type="month"
+                                name="start_project"
+                                id="start_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+
+                            <input
+                                type="month"
+                                name="end_project"
+                                id="end_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description_project">Description</label>
+                        <input
+                            type="text"
+                            id="description_project"
+                            name="description_project"
+                            placeholder="e.g Graduated with High Honors"
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion2">
+                <button type="button" class="accordion">Section 7</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label for="project_name">Project Title</label>
+                        <input
+                            type="text"
+                            name="project_name"
+                            id="project_name"
+                            placeholder=""
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Start & End Date*</label>
+                        <div class="date">
+                            <input
+                                type="month"
+                                name="start_project"
+                                id="start_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+
+                            <input
+                                type="month"
+                                name="end_project"
+                                id="end_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description_project">Description</label>
+                        <input
+                            type="text"
+                            id="description_project"
+                            name="description_project"
+                            placeholder="e.g Graduated with High Honors"
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion2">
+                <button type="button" class="accordion">Section 8</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label for="project_name">Project Title</label>
+                        <input
+                            type="text"
+                            name="project_name"
+                            id="project_name"
+                            placeholder=""
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Start & End Date*</label>
+                        <div class="date">
+                            <input
+                                type="month"
+                                name="start_project"
+                                id="start_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+
+                            <input
+                                type="month"
+                                name="end_project"
+                                id="end_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description_project">Description</label>
+                        <input
+                            type="text"
+                            id="description_project"
+                            name="description_project"
+                            placeholder="e.g Graduated with High Honors"
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
+            <div id="accordion2">
+                <button type="button" class="accordion">Section 9</button>
+                <div class="panel">
+                    <div class="form-group">
+                        <label for="project_name">Project Title</label>
+                        <input
+                            type="text"
+                            name="project_name"
+                            id="project_name"
+                            placeholder=""
+                            required
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Start & End Date*</label>
+                        <div class="date">
+                            <input
+                                type="month"
+                                name="start_project"
+                                id="start_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+
+                            <input
+                                type="month"
+                                name="end_project"
+                                id="end_date_project"
+                                value="<%= currentDate %>"
+                                required
+                            />
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description_project">Description</label>
+                        <input
+                            type="text"
+                            id="description_project"
+                            name="description_project"
+                            placeholder="e.g Graduated with High Honors"
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+            </div>
             <div class="controls">
                 <button type="button" id="add2">
                     <i class="fa fa-plus"></i> Add More
@@ -317,9 +847,162 @@
             <h3 class="step-title">Websites & Social Links</h3>
             <div id="more-form3">
                 <div id="accordion3">
-                    <button type="button" class="accordion" onclick="change()">
-                        Section 0
-                    </button>
+                    <button type="button" class="accordion">Section 1</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input
+                                type="text"
+                                name="link_label"
+                                id="label"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="link">Link</label>
+                            <input
+                                type="url"
+                                name="link"
+                                id="link"
+                                pattern="https://.*"
+                                size="30"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion3">
+                    <button type="button" class="accordion">Section 2</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input
+                                type="text"
+                                name="link_label"
+                                id="label"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="link">Link</label>
+                            <input
+                                type="url"
+                                name="link"
+                                id="link"
+                                pattern="https://.*"
+                                size="30"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion3">
+                    <button type="button" class="accordion">Section 3</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input
+                                type="text"
+                                name="link_label"
+                                id="label"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="link">Link</label>
+                            <input
+                                type="url"
+                                name="link"
+                                id="link"
+                                pattern="https://.*"
+                                size="30"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion3">
+                    <button type="button" class="accordion">Section 4</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input
+                                type="text"
+                                name="link_label"
+                                id="label"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="link">Link</label>
+                            <input
+                                type="url"
+                                name="link"
+                                id="link"
+                                pattern="https://.*"
+                                size="30"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion3">
+                    <button type="button" class="accordion">Section 5</button>
+                    <div class="panel">
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input
+                                type="text"
+                                name="link_label"
+                                id="label"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="link">Link</label>
+                            <input
+                                type="url"
+                                name="link"
+                                id="link"
+                                pattern="https://.*"
+                                size="30"
+                                required
+                            />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion3">
+                    <button type="button" class="accordion">Section 6</button>
                     <div class="panel">
                         <div class="form-group">
                             <label for="label">Label</label>
@@ -398,4 +1081,4 @@
 <script src="/js/dynamicForm/dynamicForm1.js"></script>
 <script src="/js/accordion.js"></script>
 <script src="/js/dynamicForm/dynamicForm3.js"></script>
-<script src="/js/dynamicForm    /dynamicForm2.js"></script>
+<script src="/js/dynamicForm/dynamicForm2.js"></script>
