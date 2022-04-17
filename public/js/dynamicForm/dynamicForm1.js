@@ -1,9 +1,11 @@
 const removeField1 = document.querySelector("#remove1");
 const addField1 = document.querySelector("#add1");
+const moreForm = document.querySelectorAll("#more-form");
 let counter = 1;
 removeField1.addEventListener("click", function () {
     const accordion1 = document.querySelectorAll("#accordion1");
     if (accordion1.length > 1) {
+        counter--;
         accordion1[accordion1.length - 1].remove();
     }
 });
@@ -88,6 +90,5 @@ addField1.addEventListener("click", function () {
             </div>\
         </div>\
     </div>';
-    const moreForm1 = document.querySelector("#more-form1");
-    moreForm1.innerHTML += title;
+    moreForm[0].innerHTML += title;
 });
